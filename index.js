@@ -12,12 +12,12 @@ const app = express()
 app.use(express.json())
 
 
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'craft');
-  next();
-});
+// app.use((req, res, next) => {
+//   res.header('Access-Control-Allow-Origin', 'craft');
+//   next();
+// });
 
-app.get('/craft',async (req,res) => {
+app.get('/',async (req,res) => {
 
   try {
     
