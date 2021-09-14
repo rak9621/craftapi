@@ -1,7 +1,8 @@
 const express = require("express")
 const request = require("request");
 require('./db/conn')
-const port = process.env.port || 3005
+
+const port = process.env.port || 3000
 const Craft = require('./db/model/model')
 
 
@@ -12,7 +13,7 @@ app.use(express.json())
 
 
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Origin', 'craft');
   next();
 });
 

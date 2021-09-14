@@ -11,7 +11,7 @@
   "devDependencies": {},
   "scripts": {
 
-    "dev":"nodemon craftapi/api.js",
+    "dev":"node api.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
