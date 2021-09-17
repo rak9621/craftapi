@@ -5,14 +5,16 @@ require('./db/conn')
 const port = process.env.port || 3000
 const Craft = require('./db/model/model')
 const cors = require('cors')
-
+const bodyParser = require('body-parser')
 const app = express()
 
 app.use(express.json())
 app.use(cors())
+app.use(bodyParser.json())
 
 // app.use((req, res, next) => {
-//   res.header('Access-Control-Allow-Origin', 'craft');
+//   res.header('Ac
+//cess-Control-Allow-Origin', 'craft');
 //   next();
 // });
 
