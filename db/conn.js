@@ -1,6 +1,8 @@
 const mongoose = require('mongoose')
+const dotenv = require('dotenv')
+dotenv.config()
  
- mongoose.connect("mongodb+srv://atul:atul@revisenoderak.zo7jp.mongodb.net/craftdata?retryWrites=true&w=majority").then(() => {
+mongoose.connect(process.env.DB_CONN).then(() => {
 
     console.log("database is now connected")
 
