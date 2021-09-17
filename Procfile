@@ -1,1 +1,1 @@
-wed : node index.js
+wed : node src/index.js
